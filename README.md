@@ -102,3 +102,22 @@ The ESP32 Smart Parking System is an embedded systems project designed to monito
 ## License
 
 This project is developed for educational and learning purposes.
+## Screenshots
+
+### Circuit Diagram
+![Circuit Diagram](Screenshots/circuit.png)
+
+### OLED Dashboard
+![OLED Dashboard](Screenshots/oled_dashboard.png)
+
+### Parking Available
+![Parking Available](Screenshots/parking_available.png)
+
+### Parking Full
+![Parking Full](Screenshots/parking_full.png)
+
+### Servo Gate
+![Servo Gate](Screenshots/servo_open.png)
+
+### Serial Monitor Output
+![Serial Monitor](Screenshots/serial_monitor.png)

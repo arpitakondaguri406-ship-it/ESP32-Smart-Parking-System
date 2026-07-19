@@ -1,118 +1,104 @@
-# 🚗 ESP32 Smart Parking System
+# ESP32 Smart Parking System
 
-An IoT-based Smart Parking System developed using the ESP32 microcontroller. This project monitors parking slot availability, controls an automatic parking gate using a servo motor, displays real-time information on an OLED display, and provides visual and audio indications using LEDs and a buzzer.
+## Project Overview
 
----
-
-## 📌 Project Overview
-
-The Smart Parking System detects the occupancy of parking slots and automatically opens or closes the parking gate based on slot availability. The system continuously updates the parking status on the OLED display and provides a professional embedded system interface.
+The ESP32 Smart Parking System is an embedded systems project designed to monitor parking slot availability and automate vehicle entry using an ESP32 microcontroller. The system continuously monitors parking occupancy, controls a servo-operated gate, displays parking information on an OLED display, and provides visual and audio alerts using LEDs and a buzzer.
 
 ---
 
-## ✨ Features
+## Features
 
-- ESP32-based Smart Parking System
-- Automatic Servo Gate Control
-- Real-time Parking Slot Monitoring
-- OLED Display Dashboard
-- Parking Occupancy Percentage
-- Green LED (Parking Available)
-- Red LED (Parking Full)
-- Buzzer Alert
-- Serial Monitor Status Display
-- Startup Animation
-- Loading Animation
-- Professional Embedded User Interface
+- Real-time parking slot monitoring
+- Automatic gate control using a servo motor
+- OLED display for parking status
+- Occupied and available slot calculation
+- Parking occupancy percentage display
+- Green LED indication when parking is available
+- Red LED indication when parking is full
+- Buzzer alert for full parking condition
+- Serial Monitor output for debugging
+- Startup and loading screen animations
 
 ---
 
-## 🛠 Hardware Used
+## Hardware Components
 
 - ESP32 DevKit V1
 - SSD1306 OLED Display (I2C)
 - Servo Motor
-- 4 Parking Slot Sensors (Simulated using Potentiometers)
+- Four Potentiometers (used to simulate parking sensors)
 - Green LED
 - Red LED
 - Buzzer
-- 220Ω Resistors
+- 220 Ω Resistors
 - Jumper Wires
 
 ---
 
-## 💻 Software Used
+## Software and Tools
 
-- Wokwi Simulator
 - Arduino IDE
+- Wokwi Simulator
 - ESP32 Board Package
 - GitHub
 
 ---
 
-## 📚 Libraries Used
+## Libraries Used
 
 - Adafruit SSD1306
-- Adafruit GFX
+- Adafruit GFX Library
 - ESP32Servo
 - Wire
 
 ---
 
-## ⚙️ Working Principle
+## Working Principle
 
-1. ESP32 continuously reads all parking slot sensors.
-2. The system calculates:
-   - Occupied Slots
-   - Available Slots
-   - Parking Usage Percentage
-3. The OLED display updates automatically.
-4. If parking slots are available:
-   - Green LED turns ON.
-   - Servo gate opens.
-5. If parking is full:
-   - Red LED turns ON.
-   - Servo gate closes.
-   - Buzzer alerts the user.
-6. The Serial Monitor displays the current parking status.
+1. The ESP32 reads the status of all parking sensors.
+2. The system calculates occupied and available parking slots.
+3. The parking occupancy percentage is calculated.
+4. Parking information is displayed on the OLED screen.
+5. If parking space is available, the servo gate opens and the green LED turns on.
+6. If all parking slots are occupied, the servo gate closes, the red LED turns on, and the buzzer is activated.
+7. The parking status is continuously displayed on the Serial Monitor.
 
 ---
 
-## 📷 Project Preview
+## Project Files
 
-- OLED Dashboard
-- Automatic Gate Control
-- Parking Slot Monitoring
-- LED and Buzzer Indicators
-- Serial Monitor Output
-
----
-
-## 🚀 Future Improvements
-
-- RFID-based Vehicle Authentication
-- Wi-Fi Monitoring using ESP32
-- Blynk Mobile Dashboard
-- Firebase Cloud Integration
-- EEPROM Data Storage
-- IR Sensor-Based Vehicle Detection
-- Mobile Application
-- Number Plate Recognition using ESP32-CAM
+- sketch.ino
+- diagram.json
+- libraries.txt
+- README.md
 
 ---
 
-## 🎯 Applications
+## Future Enhancements
 
-- Shopping Malls
-- Office Buildings
-- Apartment Parking
-- College Campuses
-- Smart Cities
+- RFID-based vehicle authentication
+- Wi-Fi monitoring using ESP32
+- Blynk mobile dashboard
+- Firebase cloud integration
+- EEPROM data storage
+- IR sensor-based vehicle detection
+- ESP32-CAM number plate recognition
+- Mobile application support
+
+---
+
+## Applications
+
+- Shopping malls
+- Apartment parking
+- Office buildings
+- Educational institutions
 - Hospitals
 - Airports
+- Smart city parking systems
 
 ---
 
-## 📄 License
+## License
 
-This project is intended for educational and learning purposes.
+This project is developed for educational and learning purposes.
